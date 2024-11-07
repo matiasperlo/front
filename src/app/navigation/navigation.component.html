@@ -1,0 +1,45 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/panel">
+        <div class="flex items-center space-x-2">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+          <span>Inicio</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/panel/desarrolladores">
+        <div class="flex items-center space-x-2">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="people"></mat-icon>
+          <span>Desarrolladores</span>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main class="flex flex-col justify-between">
+      <mat-toolbar color="primary">
+        @if (isHandset$ | async) {
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        }
+  
+        <span>Capacitacion CIDS 2024</span>
+        <!-- TODO: Usuario -->
+      </mat-toolbar>
+      <div class="flex-grow p-8">
+        <!-- ---------------------------- -->
+         <div class="flex flex-row justify-end py-2">
+           <button mat-flat-button type="button">Registrar</button>
+         </div>
+        <!-- <router-outlet></router-outlet> -->
+        <app-table/>
+        <!-- ---------------------------- -->
+      </div>
+      <app-footer />
+    </main>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
