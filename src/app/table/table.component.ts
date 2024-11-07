@@ -13,7 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [MatTableModule, MatPaginatorModule, MatSortModule, MatIconModule]
 })
 export class TableComponent implements AfterViewInit {
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatPaginator) paginatorUp!: MatPaginator;
+  // @ViewChild(MatPaginator) paginatorDown!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<TableItem>;
   dataSource = new TableDataSource();
@@ -23,7 +24,8 @@ export class TableComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+    // TODO: Modificarlo para que comparta el uso de dos paginadores
+    this.dataSource.paginator = this.paginatorUp;
     this.table.dataSource = this.dataSource;
   }
 }

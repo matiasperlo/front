@@ -38,9 +38,25 @@ export interface TableItem {
 
 const EXAMPLE_DATA: TableItem[] = [
   {nombre: 'Matias', correo: 'matias@gmail.com', rol: 'Desarrollador', fechaContratacion: '2021-01-01'},
-  {nombre: 'Juan', correo: 'juan@gmail.com', rol: 'Tester', fechaContratacion: '2021-01-01'},
-  {nombre: 'Pedro', correo: 'pedro@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2021-01-01'},
-  {nombre: 'Maria', correo: 'maria@gmail.com', rol: 'Analista Funcional', fechaContratacion: '2021-01-01'},
+  {nombre: 'Juan', correo: 'juan@gmail.com', rol: 'Tester', fechaContratacion: '2022-02-05'},
+  {nombre: 'Pedro', correo: 'pedro@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2023-01-15'},
+  {nombre: 'Maria', correo: 'maria@gmail.com', rol: 'Analista Funcional', fechaContratacion: '2021-08-11'},
+  {nombre: 'Lucia', correo: 'lucia@gmail.com', rol: 'Desarrollador', fechaContratacion: '2020-03-12'},
+  {nombre: 'Carlos', correo: 'carlos@gmail.com', rol: 'Tester', fechaContratacion: '2019-07-23'},
+  {nombre: 'Ana', correo: 'ana@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2021-11-30'},
+  {nombre: 'Luis', correo: 'luis@gmail.com', rol: 'Analista Funcional', fechaContratacion: '2022-04-18'},
+  {nombre: 'Sofia', correo: 'sofia@gmail.com', rol: 'Desarrollador', fechaContratacion: '2020-09-25'},
+  {nombre: 'Miguel', correo: 'miguel@gmail.com', rol: 'Tester', fechaContratacion: '2018-12-14'},
+  {nombre: 'Laura', correo: 'laura@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2021-06-07'},
+  {nombre: 'Jorge', correo: 'jorge@gmail.com', rol: 'Analista Funcional', fechaContratacion: '2022-10-19'},
+  {nombre: 'Elena', correo: 'elena@gmail.com', rol: 'Desarrollador', fechaContratacion: '2019-05-21'},
+  {nombre: 'Diego', correo: 'diego@gmail.com', rol: 'Tester', fechaContratacion: '2020-08-13'},
+  {nombre: 'Marta', correo: 'marta@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2021-02-27'},
+  {nombre: 'Raul', correo: 'raul@gmail.com', rol: 'Analista Funcional', fechaContratacion: '2022-03-15'},
+  {nombre: 'Patricia', correo: 'patricia@gmail.com', rol: 'Desarrollador', fechaContratacion: '2020-11-05'},
+  {nombre: 'Andres', correo: 'andres@gmail.com', rol: 'Tester', fechaContratacion: '2019-01-29'},
+  {nombre: 'Isabel', correo: 'isabel@gmail.com', rol: 'Administrador de Base de Datos', fechaContratacion: '2021-07-16'}
+  
 ];
 
 /**
